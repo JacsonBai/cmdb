@@ -1,8 +1,11 @@
 需要python2.7环境
 git clone  https://github.com/voilet/cmdb
+
 mv cmdb /data
 cd  /data/cmdb
-pip install -r requirements.txt --index https://pypi.mirrors.ustc.edu.cn/simple/  
+##Centos7执行以下命令
+ln -s /usr/lib64/libpython2.7.so.1.0 /usr/lib64/libpython2.6.so
+pip install -r requirements.txt --index https://pypi.mirrors.ustc.edu.cn/simple/ 
 可能有些没有安装数据库组建的需要
 pip install MySQL-python
 2、建立mysql 数据库并且授权账号登录：
